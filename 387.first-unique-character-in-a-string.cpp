@@ -13,7 +13,7 @@ public:
         unordered_map<char, int> m;
         for (auto &c : s)
         {
-            m[c]++;
+           m[c]++<<" ";
             //adding number of occurences in hash table
         }
         for (int i = 0; i < s.size(); i++)
