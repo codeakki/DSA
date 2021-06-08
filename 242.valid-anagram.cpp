@@ -10,7 +10,7 @@ class Solution
 public:
     bool isAnagram(string s, string t)
     {
-        if (s.length() != t.length()) return false;
+        /* if (s.length() != t.length()) return false;
         // If length are not equal than they are not isAnagram
          int n=s.length();
          int counts[26]={0};  // as it contains only lower cases value
@@ -20,7 +20,17 @@ public:
          }
           for (int i = 0; i < 26; i++)
             if (counts[i]) return false;  //if anyvalue find that its not angram
-        return true;
+        return true; */
+
+
+
+
+        //Sort 
+         sort(s.begin(), s.end());
+        
+         sort(t.begin(), t.end());
+        
+         return s == t;
     }
 };
 // @lc code=end
